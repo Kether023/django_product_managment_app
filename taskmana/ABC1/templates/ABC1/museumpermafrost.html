@@ -49,7 +49,7 @@
 
     <link href="product.css" rel="stylesheet">
   </head>
-  <body>
+  <body bgcolor="#121212">
 <style>
 header {
 	background:#FFFFFF;
@@ -76,11 +76,60 @@ header {
    a {
     text-decoration: none;
    }
+ hr {
+    border: none;
+    background-color: black;
+    color: black;
+    height: 5px;
+   }
+   .btn-circle {
+    width: 80px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+}
+.btn-circle1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    position: relative;
+    top: 10px;
+}
+.btn-circle3 {
+    width: 120px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+}
+h1 {
+    position: relative;
+    top: 5px;
+}
+modal-footer {
+    position: absolute
+    right: 10px
+}
+body {
+    background-color: black
+}
 </style>
 
 </head>
 
-<body>
+<body bgcolor="#121212">
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
      <a class="py-2" href="/" aria-label="На главную">
@@ -89,42 +138,119 @@ header {
                 cx="12" cy="12" r="10"/>
     </a>
       <h1 class="display-4 fw-normal fs-3 lh-lg">ТурКомпасЯкутии</h1>
-      <button type="button" class="btn btn-outline-dark fs-5" data-bs-toggle="modal" data-bs-target="#tour">Тур</button>
-      <button type="button" class="btn btn-outline-dark fs-5" data-bs-toggle="modal" data-bs-target="#support">Поддержка</button>
-      <button type="button" class="btn btn-outline-dark fs-5" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">О нас</button>
+      <button type="button" class="btn btn-outline-dark btn-circle3 fs-5" data-bs-toggle="modal" data-bs-target="#tour">Прогулка</button>
+      <button type="button" class="btn btn-outline-dark btn-circle1 fs-5" data-bs-toggle="modal" data-bs-target="#support">Поддержка</button>
+      <button type="button" class="btn btn-outline-dark btn-circle fs-5" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">О нас</button>
   </nav>
 </header>
-<hr style="border-width: 10px;">
-<div class="border col-md-5 p-lg-5 mx-auto my-10 border-bottom">
-      <h1 class="display-4">Саха (Якутия)</h1>
-      <h1 class="lead">Якутия самый обширный регион России, алмазная и золотая сокровищница нашей страны.
-      Здесь, в суровом северном климате, природа предстаёт во всей своей первозданной чистоте и красоте</h1>
-    </hr>
+
+    {% load static %}
+    <video playsinline="playsinline" autobuffer="autobuffer" onclick="this.paused ? this.play() : this.pause();" muted="muted" loop="loop">
+    <source src="{% static "Yakut.mp4" %}" width="1920" height="500" type="video/mp4"> </source>
+    </video>
     <!-- Здесь кнопка для туров -->
        <div class="modal fade bd-example-modal-lg" tabindex="-1" id="tour" aria-bs-labelledby="loginModalLabel" aria-bs-hidden="true"
          data-bs-backdrop="static">
     <div class="modal-dialog modal-sl">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Туры в Якутии</h4>
+                <h4 class="modal-title">Прогулка по достопримечательностям</h4>
                 <button type="button" class="close float-right" data-bs-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <h5 class="modal-title">Природные достопремичательности</h5>
-                        <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="#">Ледник Булуус</a>
+                        <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <h5 class="modal-title fs-4 fw-bold">Природные достопремичательности</h5>
+                        <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Ледник Булуус</a>
                         </div>
-                        <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="#">Песчаные дюны</a>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Песчаные дюны</a>
                         </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Водопады Курулуур</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Дюны Тукуланы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Ленские столбы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Синские столбы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Горы Кисилях</a>
+                        </div>
+                         <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Туруук Хая</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Природный парк Момский</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Улахан-Сис</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Озеро Лабынкыр</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Олёкминский заповедник</a>
+                             </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                        <h5 class="modal-title">Культурные объекты</h5>
-                            <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="/museumpermafrost">Музей Царство вечной мерзлоты</a>
+                            <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <h5 class="modal-title fs-4 fw-bold">Культурные объекты</h5>
+                            <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                            <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="/museumpermafrost">Музей "Царство вечной мерзлоты"</a>
+                        </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей-заповедник "Дружба" в Соттинцах</a>
+                         </div>
+                             <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей мамонта в Якутске</a>
+                             </div>
+                             <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей и центр хомуса народов мира</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Якутский зоопарк "Орто-Дойду"</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Национальный художественный музей Республики Саха</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Сокровищница Республики Саха</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Этнографический комплекс "Чочур-Муран"</a>
+                             </div>
+                        </div>
+                        </div>
+
+                        </div>
                         </div>
                         </div>
                         </div>
@@ -155,8 +281,16 @@ header {
         </div>
     </div>
 </div>
+<div class="overlay">
+<div class="border col-md-5 p-lg-5 mx-auto my-10 border-bottom">
+      <h1 class="display-4 text-white lh-lg fw-bold">Саха (Якутия)</h1>
+      <h1 class="lead text-white lh-lg fw-bold">Якутия самый обширный регион России, алмазная и золотая сокровищница нашей страны.
+      Здесь, в суровом северном климате, природа предстаёт во всей своей первозданной чистоте и красоте</h1>
+</div>
+</div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="/assets/js/jquery-3.5.1.min.js"></script>
 </body>
 </html>

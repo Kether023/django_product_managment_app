@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Product example · Bootstrap v5.1</title>
+    <title>ТурКомпасЯкутии</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -64,9 +64,10 @@ video {
 }
 
 header {
-	background:#FFFFFF;
-	position: fixed;
+    background: #FFFFFF;
+	position: relative;
 	width: 100%;
+	height: 95px;
 	text-align: center;
 	color: black;
 	-webkit-transition: .4s;
@@ -92,14 +93,76 @@ a {
         background-clip: padding-box;
         border: 15px solid rgba(0, 0, 0, 0.3);
         border-radius: 300px;
-        margin: 20px auto;
+        margin: 200px auto;
         padding: 10 px;
         text-align: center;
-        width: 500px;
-        height: 500px;
+        width: 800px;
+        height: 400px;
         mix-blend-mode: hard-light;
-}}
-
+        align: center
+        position: relative;
+        top:10px;
+}
+label {
+       float: left;
+       margin: 5px 0px;
+}
+.btn-circle {
+    width: 80px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+}
+.btn-circle1 {
+    width: 80px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+}
+.btn-circle2 {
+    width: 150px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    position: relative;
+    top: 15px;
+}
+.btn-circle3 {
+    width: 120px;
+    height: 50px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+}
+h1 {
+    position: relative;
+    top: 20px;
+}
+h {
+    position:relative;
+    top: 8px;
+    right: 105px;
+}
+img {
+    position:relative;
+    bottom: 5px;
+}
 </style>
 
 </head>
@@ -112,20 +175,21 @@ a {
 
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-     <a class="py-2" href="#" aria-label="Product">
-            <img src="https://cdn-icons-png.flaticon.com/512/4052/4052186.png" width="50" height="50" fill="none" stroke="currentColor"
+           <a class="py-2" href="#" aria-label="AAAAAAAA">
+            <img src="https://cdn-icons-png.flaticon.com/512/4052/4052186.png" width="80" height="80" fill="none" stroke="currentColor"
              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>ТурКомпасЯкутии</title><circle
                 cx="12" cy="12" r="10"/>
     </a>
-      <h1 class="display-4 fw-normal fs-3 lh-lg">ТурКомпасЯкутии</h1>
-      <button type="button" class="btn btn-outline-dark fs-5" data-bs-toggle="modal" data-bs-target="#loginModal">Вход</button>
-      <button type="button" class="btn btn-outline-dark fs-5" data-bs-toggle="modal" data-bs-target="#tour">Тур</button>
-      <button type="button" class="btn btn-outline-dark fs-5" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">Поддержка</button>
-      <button type="button" class="btn btn-outline-dark fs-5" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">О нас</button>
+      <h class="display-4 fw-normal fs-3 lh-lg">ТурКомпасЯкутии</h>
+      <button type="button" class="btn btn-outline-dark btn-circle fs-5 " data-bs-toggle="modal" data-bs-target="#loginModal">Вход</button>
+      <button type="button" class="btn btn-outline-dark btn-circle3 fs-5" data-bs-toggle="modal" data-bs-target="#tour">Прогулка</button>
+      <button type="button" class="btn btn-outline-dark btn-circle2 fs-5" data-bs-toggle="modal" data-bs-target="#support">Поддержка</button>
+      <button type="button" class="btn btn-outline-dark btn-circle1 fs-5" data-toggle="modal" data-target="#loginModal">О нас</button>
   </nav>
 </header>
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" id="loginModal" aria-bs-labelledby="loginModalLabel" aria-bs-hidden="true"
-         data-bs-backdrop="static">
+    </form>
+    </div>
+     <div class="modal fade bd-example-modal-lg" tabindex="-1" id="loginModal" aria-bs-labelledby="loginModalLabel" aria-bs-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -146,6 +210,74 @@ a {
                     </div>
                 </form>
             </div>
+                <div class="modal-footer d-flex justify-content-right">
+                    <div class="moda-footer .btn d-flex justify-content-right">
+                    <label for="remember-me" class="text-dark"><span>Запомнить меня</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                        </div>
+                    <div class="clear"></div>
+                    <a href="/login" class="btn btn-light btn-outline-dark" role="button" data-bs-toggle="modal" data-bs-target="#regModal">Зарегистрироваться</a>
+                <a href="/login" class="btn btn-light btn-outline-dark" role="button">Авторизоваться</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" tabindex="-1" id="regModal" aria-bs-labelledby="regModalLabel" aria-bs-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Регистрация</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" id="closemodal" aria-bs-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputUserName">Логин</label>
+                        <input class="form-control" placeholder="Введите логин..."
+                                type="text" id="inputUserName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Пароль</label>
+                        <input class="form-control" placeholder="Введите пароль..."
+                                type="password" id="inputPassword" />
+                        </div>
+                </form>
+            </div>
+                <div class="modal-footer d-flex justify-content-right">
+                <a href="/login" class="btn btn-light btn-outline-dark" role="button" aria-bs-disabled="true">Зарегистрироваться</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+          <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Отправьте нам сообщение</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Ваш адрес электронной почты:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Сообщение:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Отправить сообщение</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 <div class="modal-footer d-flex justify-content-right">
                     <button type="button" class="btn-outline-dark close" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#regModal"">Зарегистрироваться</button>
                 <button type="submit" class="btn-outline-dark">Авторизоваться</button>
@@ -184,39 +316,114 @@ a {
     </div>
 </div>
     <!-- Здесь кнопка для туров -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" id="tour" aria-bs-labelledby="loginModalLabel" aria-bs-hidden="true"
-         data-bs-backdrop="static">
-    <div class="modal-dialog modal-sl">
-        <div class="modal-content">
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" id="tour" aria-bs-labelledby="loginModalLabel" aria-bs-hidden="true">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Туры в Якутии</h4>
+                <h4 class="modal-title">Прогулка по достопримечательностям</h4>
                 <button type="button" class="close float-right" data-bs-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <h5 class="modal-title">Природные достопремичательности</h5>
-                        <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="#">Ледник Булуус</a>
+                        <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <h5 class="modal-title fs-4 fw-bold">Природные достопремичательности</h5>
+                        <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Ледник Булуус</a>
                         </div>
-                        <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="#">Песчаные дюны</a>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Песчаные дюны</a>
                         </div>
-                        <div class="modal-footer d-flex justify-content-right">
-                            </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Водопады Курулуур</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Дюны Тукуланы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="/lena">Ленские столбы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Синские столбы</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Горы Кисилях</a>
+                        </div>
+                         <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                        <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Туруук Хая</a>
+                        </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Природный парк Момский</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Улахан-Сис</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Озеро Лабынкыр</a>
+                             </div>
+                        <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Олёкминский заповедник</a>
+                             </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                        <h5 class="modal-title">Культурные объекты</h5>
-                            <div class="modal-footer d-flex justify-content-right">
-                        <a class="py-2 d-none d-md-inline-block" href="/museumpermafrost">Музей Царство вечной мерзлоты</a>
+                            <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                        <h5 class="modal-title fs-4 fw-bold">Культурные объекты</h5>
+                            <hr style="position:relative;height:2px;border:none;color:#121212;background:#121212" />
+                            <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="/museumpermafrost">Музей "Царство вечной мерзлоты"</a>
+                        </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray" />
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей-заповедник "Дружба" в Соттинцах</a>
+                         </div>
+                             <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей мамонта в Якутске</a>
+                             </div>
+                             <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Музей и центр хомуса народов мира</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Якутский зоопарк "Орто-Дойду"</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Национальный художественный музей Республики Саха</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Сокровищница Республики Саха</a>
+                             </div>
+                            <hr style="position:relative;height:1px;border:none;color:gray;background:gray"/>
+                         <div class="moda-footer .btn d-flex justify-content-right">
+                        <a class="py-2 d-none d-md-inline-block text-dark fs-5" href="#">Этнографический комплекс "Чочур-Муран"</a>
+                             </div>
                         </div>
                         </div>
-                </form>
-            </div>
-            </div>
-        </div>
+
+                        </div>
+                        </div>
+                        </form>
     </div>
+    </div>
+    </div>
+    </div>
+</div>
 </div>
 <div class="overlay">
 <div class="border col-md-5 p-lg-5 mx-auto my-10 border-bottom">
@@ -234,12 +441,5 @@ a {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <img src="https://cdn-icons-png.flaticon.com/512/4052/4052186.png" width="50" height="50" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></img>
-      <small class="d-block mb-3 text-muted">&copy; 2022–2022</small>
-    </div>
-</footer>
 </body>
 </html>
